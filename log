@@ -158,3 +158,17 @@ list.c:47:16: error: ‘nodo’ is used uninitialized in this function [-Werror=
 cc1: all warnings being treated as errors
 Compilation failed
 f597998
+Sun Mar 20 21:29:25 UTC 2022: 
+ list.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:48:16: error: ‘List {aka struct List}’ has no member named ‘next’
+     return list->next->data;
+                ^~
+list.c:49:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+2788301
