@@ -43,10 +43,9 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-    Node* n;
     if (list->head->next == NULL) return NULL;
     list->current = list->head->next;
-    return list->current->;
+    return list->current->data;
 }
 
 void * lastList(List * list) {
