@@ -89,3 +89,16 @@ list.c:47:21: error: ‘node’ undeclared (first use in this function); did you
 list.c:47:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 fc540c6
+Sun Mar 20 21:17:30 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:46:12: error: expected expression before ‘Node’
+     return Node* n->next->data;
+            ^~~~
+list.c:47:21: error: expected expression before ‘Node’
+     list->current = Node->next;
+                     ^~~~
+Compilation failed
+5af561b
