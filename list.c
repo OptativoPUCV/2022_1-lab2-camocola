@@ -57,9 +57,8 @@ void * lastList(List * list) {
 }
 
 void * prevList(List * list) {
-    //if (list->current == list->head) return NULL;
+    if (list->head == NULL) return NULL;
     if (list->head->prev == NULL) return NULL;
-    if (list->current == NULL) return NULL;
     list->current = list->current->prev;
     return list->current->data;
 }
