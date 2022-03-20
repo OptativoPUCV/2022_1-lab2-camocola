@@ -172,3 +172,14 @@ list.c:49:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 2788301
+Sun Mar 20 21:30:11 UTC 2022: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+test.c: In function ‘nextList’:
+list.c:49:13: error: ‘n’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     return n->next->data;
+            ~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+41e9966
