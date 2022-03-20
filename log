@@ -34,3 +34,16 @@ Sun Mar 20 05:02:31 UTC 2022:
  tests:  2|5
 total_score: 15/70
 1e99293
+Sun Mar 20 21:15:28 UTC 2022: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:46:16: error: ‘List {aka struct List}’ has no member named ‘next’
+     return list->next->data;
+                ^~
+list.c:47:25: error: ‘List {aka struct List}’ has no member named ‘next’
+     list->current = list->next;
+                         ^~
+Compilation failed
+43d954a
