@@ -118,3 +118,14 @@ Sun Mar 20 21:19:17 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ca98372
+Sun Mar 20 21:19:39 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+test.c: In function ‘nextList’:
+list.c:47:16: error: ‘nodo’ is used uninitialized in this function [-Werror=uninitialized]
+     return nodo->next->data;
+            ~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8e046bb
