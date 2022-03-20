@@ -47,3 +47,15 @@ list.c:47:25: error: ‘List {aka struct List}’ has no member named ‘next’
                          ^~
 Compilation failed
 43d954a
+Sun Mar 20 21:16:20 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:46:12: error: ‘node’ undeclared (first use in this function); did you mean ‘Node’?
+     return node->next->data;
+            ^~~~
+            Node
+list.c:46:12: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7e972b2
