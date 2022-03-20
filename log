@@ -147,3 +147,14 @@ list.c:48:25: error: ‘*(Node **)&nodo’ is a pointer; did you mean to use ‘
                          ->
 Compilation failed
 a8afd0e
+Sun Mar 20 21:19:58 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+test.c: In function ‘nextList’:
+list.c:47:16: error: ‘nodo’ is used uninitialized in this function [-Werror=uninitialized]
+     return nodo->next->data;
+            ~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f597998
