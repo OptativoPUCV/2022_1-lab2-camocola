@@ -129,3 +129,21 @@ list.c:47:16: error: ‘nodo’ is used uninitialized in this function [-Werror=
 cc1: all warnings being treated as errors
 Compilation failed
 8e046bb
+Sun Mar 20 21:19:49 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:46:11: error: array size missing in ‘nodo’
+     Node* nodo[];
+           ^~~~
+list.c:47:16: error: ‘*(Node **)&nodo’ is a pointer; did you mean to use ‘->’?
+     return nodo->next->data;
+                ^~
+                ->
+list.c:48:25: error: ‘*(Node **)&nodo’ is a pointer; did you mean to use ‘->’?
+     list->current = nodo->next;
+                         ^~
+                         ->
+Compilation failed
+a8afd0e
