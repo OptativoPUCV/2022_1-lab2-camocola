@@ -599,3 +599,20 @@ Mon Mar 21 02:05:23 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ffe91ec
+Mon Mar 21 02:15:48 UTC 2022: 
+ list.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:89:9: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+     if (current->next != NULL)
+         ^~~~~~~
+         popCurrent
+list.c:89:9: note: each undeclared identifier is reported only once for each function it appears in
+list.c: In function ‘popCurrent’:
+list.c:109:22: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+     while(new->next!=current)
+                      ^~~~~~~
+                      popCurrent
+Compilation failed
+26a4fa1
