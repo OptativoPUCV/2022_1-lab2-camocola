@@ -430,3 +430,17 @@ list.c:73:11: note: ...this statement, but the latter is misleadingly indented a
 cc1: all warnings being treated as errors
 Compilation failed
 c7c4606
+Mon Mar 21 00:58:26 UTC 2022: 
+ list.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:70:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+       if (list->tail == NULL)
+       ^~
+list.c:72:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+           new = list->tail;
+           ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+38c51e4

@@ -66,9 +66,8 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) {
     Node* new = createNode(data);
-    if (list->head == list->current) 
-      if (list->head == list->tail)
-        if (list->current == list->tail)
+    if (list->head == NULL) 
+      if (list->tail == NULL)
           new = list->head;
           new = list->tail;
     new->next = list->head;
@@ -86,6 +85,8 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
+  //FALTA ESTE
+  
 }
 
 void * popFront(List * list) {
@@ -99,6 +100,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+    //FALTA ESTE TAMBIEN
     return NULL;
 }
 
