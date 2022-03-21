@@ -513,3 +513,8 @@ list.c:109:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 d1d6a90
+Mon Mar 21 01:19:38 UTC 2022: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|0
+f031764
