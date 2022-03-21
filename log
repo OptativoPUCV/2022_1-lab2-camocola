@@ -686,3 +686,8 @@ list.c:90:31: error: ‘tail’ undeclared (first use in this function)
 list.c:90:31: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 1af13e9
+Mon Mar 21 02:27:54 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+4cd6b4c
