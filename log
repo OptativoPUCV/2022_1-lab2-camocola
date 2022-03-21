@@ -314,3 +314,9 @@ list.c:61:39: error: ‘null’ undeclared (first use in this function)
 list.c:61:39: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 f80fd38
+Mon Mar 21 00:11:15 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+952b8be
