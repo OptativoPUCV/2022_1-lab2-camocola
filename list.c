@@ -112,6 +112,7 @@ void * popCurrent(List * list) {
     Node* new = list->head;
     if (list->current == list->head){
       new->next = list->head;
+      new->current = list->current
       free(list->head);
       list->head = list->current->next;
     } else {
