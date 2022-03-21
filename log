@@ -288,3 +288,18 @@ Mon Mar 21 00:02:17 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 e4af7e3
+Mon Mar 21 00:10:36 UTC 2022: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+list.c: In function ‘prevList’:
+list.c:61:9: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+     if (current == NULL) return null;
+         ^~~~~~~
+         popCurrent
+list.c:61:9: note: each undeclared identifier is reported only once for each function it appears in
+list.c:61:33: error: ‘null’ undeclared (first use in this function)
+     if (current == NULL) return null;
+                                 ^~~~
+Compilation failed
+7efdb68
