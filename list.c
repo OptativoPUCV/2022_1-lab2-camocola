@@ -101,7 +101,7 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
     //FALTA ESTE TAMBIEN
     Node* aux = list->head;
-    while (aux->next != aux->current)
+    while (aux->next != list->current)
       aux = aux->next;
     aux->next = list->current->next;
     free(list->current);
