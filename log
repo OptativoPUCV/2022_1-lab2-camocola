@@ -638,3 +638,18 @@ Mon Mar 21 02:19:25 UTC 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 7dd4428
+Mon Mar 21 02:26:23 UTC 2022: 
+ list.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:90:9: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+     if (current == tail)
+         ^~~~~~~
+         popCurrent
+list.c:90:9: note: each undeclared identifier is reported only once for each function it appears in
+list.c:90:20: error: ‘tail’ undeclared (first use in this function)
+     if (current == tail)
+                    ^~~~
+Compilation failed
+eb4eb54
