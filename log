@@ -364,3 +364,23 @@ list.c:67:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 0f26467
+Mon Mar 21 00:40:48 UTC 2022: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:69:37: error: comparison between pointer and integer [-Werror]
+     if (list->head == list->current == list->tail)
+                                     ^~
+list.c:69:20: error: suggest parentheses around comparison in operand of ‘==’ [-Werror=parentheses]
+     if (list->head == list->current == list->tail)
+         ~~~~~~~~~~~^~~~~~~~~~~~~~~~
+list.c:69:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+     if (list->head == list->current == list->tail)
+     ^~
+list.c:71:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       new = list->tail;
+       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+86725b0
