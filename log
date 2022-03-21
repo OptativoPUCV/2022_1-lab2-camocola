@@ -616,3 +616,15 @@ list.c:109:22: error: ‘current’ undeclared (first use in this function); did
                       popCurrent
 Compilation failed
 26a4fa1
+Mon Mar 21 02:16:09 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:109:22: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+     while(new->next!=current)
+                      ^~~~~~~
+                      popCurrent
+list.c:109:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+cdd844a
