@@ -487,3 +487,13 @@ Mon Mar 21 01:18:20 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 52c7938
+Mon Mar 21 01:18:34 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:104:28: error: ‘Node {aka struct Node}’ has no member named ‘current’
+     while (aux->next != aux->current)
+                            ^~
+Compilation failed
+d73f9a0
