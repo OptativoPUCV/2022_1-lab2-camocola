@@ -653,3 +653,14 @@ list.c:90:20: error: ‘tail’ undeclared (first use in this function)
                     ^~~~
 Compilation failed
 eb4eb54
+Mon Mar 21 02:26:34 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:90:26: error: ‘tail’ undeclared (first use in this function)
+     if (list->current == tail)
+                          ^~~~
+list.c:90:26: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7d80ace
