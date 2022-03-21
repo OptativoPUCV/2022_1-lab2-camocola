@@ -731,3 +731,16 @@ Mon Mar 21 02:33:02 UTC 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 247c954
+Mon Mar 21 02:45:52 UTC 2022: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:114:11: error: ‘List {aka struct List}’ has no member named ‘next’
+       list->next = list->head
+           ^~
+list.c:115:5: error: expected ‘;’ before ‘}’ token
+     } else {
+     ^
+Compilation failed
+1c65075
