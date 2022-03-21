@@ -70,7 +70,7 @@ void pushFront(List * list, void * data) {
     if (list->head)
       list->head->prev = new;
     list->head = new;
-    n->prev = NULL;
+    new->prev = NULL;
     list->size++;
 }
 

@@ -334,3 +334,13 @@ list.c:74:9: error: ‘List {aka struct List}’ has no member named ‘size’
          ^~
 Compilation failed
 c8df947
+Mon Mar 21 00:28:46 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:74:9: error: ‘List {aka struct List}’ has no member named ‘size’
+     list->size++;
+         ^~
+Compilation failed
+0a9fd12
