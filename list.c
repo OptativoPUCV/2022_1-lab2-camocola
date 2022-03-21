@@ -71,6 +71,7 @@ void pushFront(List * list, void * data) {
       list->head->prev = new;
     list->head = new;
     new->prev = NULL;
+    if (list->head->prev == NULL) return NULL;
     //list->size++;
 }
 
