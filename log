@@ -303,3 +303,14 @@ list.c:61:33: error: ‘null’ undeclared (first use in this function)
                                  ^~~~
 Compilation failed
 7efdb68
+Mon Mar 21 00:10:48 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘prevList’:
+list.c:61:39: error: ‘null’ undeclared (first use in this function)
+     if (list->current == NULL) return null;
+                                       ^~~~
+list.c:61:39: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+f80fd38
